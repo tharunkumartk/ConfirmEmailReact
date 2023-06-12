@@ -35,11 +35,11 @@ const HomePage = () => {
         >
           RescaleMed
         </Typography>
-        <Grid item xs={5} sx={{ marginTop: "5%", width: "15%" }}>
+        <Grid item sx={{ marginTop: "5%", marginHorizontal: "10%" }}>
           <Button
             variant="contained"
             href={
-              "rescalemed:///registeritems/emailconfirmation" +
+              "rescalemed:///emailconfirmation" +
               "?token=" +
               params.get("token") +
               "&tokenid=" +
