@@ -43,7 +43,7 @@ const HomePage = () => {
               "?token=" +
               params.get("token") +
               "&tokenid=" +
-              params.get("tokenid")
+              params.get("tokenId")
             }
             size={"large"}
             sx={{
