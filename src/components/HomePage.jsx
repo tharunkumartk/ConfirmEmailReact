@@ -1,6 +1,9 @@
 import { Button, Grid, Typography } from "@mui/material";
+import { useSearchParams } from "react-router-dom";
 
 const HomePage = () => {
+  const [params] = useSearchParams();
+
   return (
     <Grid
       container
@@ -35,7 +38,13 @@ const HomePage = () => {
         <Grid item xs={5} sx={{ marginTop: "5%", width: "15%" }}>
           <Button
             variant="contained"
-            href="rescalemed:///registeritems/emailconfirmation"
+            href={
+              "rescalemed:///registeritems/emailconfirmation" +
+              "?token=" +
+              params.get("token") +
+              "&tokenid=" +
+              params.get("tokenid")
+            }
             size={"large"}
             sx={{
               textAlign: "center",
