@@ -56,7 +56,7 @@ const HomePage = () => {
               },
             }}
           >
-            Open app and confirm email
+            Open app
           </Button>
         </Grid>
       </Grid>
