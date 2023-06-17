@@ -63,7 +63,7 @@ const HomePage = () => {
           RescaleMed
         </Typography>
         <Grid
-          item
+          container
           sx={{
             marginTop: "5%",
             marginHorizontal: "10%",
@@ -72,7 +72,10 @@ const HomePage = () => {
           }}
         >
           {confirmed === 1 ? (
-            <Grid item sx={{ justifyContent: "center", alignItems: "center" }}>
+            <Grid
+              container
+              sx={{ justifyContent: "center", alignItems: "center" }}
+            >
               <Typography
                 variant="h5"
                 align="center"
@@ -100,7 +103,10 @@ const HomePage = () => {
               </Button>
             </Grid>
           ) : confirmed === -1 ? (
-            <Grid sx={{ justifyContent: "center", alignItems: "center" }}>
+            <Grid
+              container
+              sx={{ justifyContent: "center", alignItems: "center" }}
+            >
               <Typography
                 variant="h5"
                 align="center"
@@ -111,7 +117,10 @@ const HomePage = () => {
               </Typography>
             </Grid>
           ) : confirming ? (
-            <Grid item>
+            <Grid
+              container
+              sx={{ alignItems: "center", justifyContent: "center" }}
+            >
               <Typography
                 variant="h5"
                 color={"white"}
